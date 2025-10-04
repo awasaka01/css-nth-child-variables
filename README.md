@@ -31,18 +31,18 @@ The code is very simple, here's `100-vars.css`:
 Having so many individual rules can make the file relatively big for all it does. [<sup>[see table]</sup>](#file-size-table)  
 So there are six different files, containing different max amounts of variables, pick the smallest one that still fits the amount you need.
 
-> [**100-vars.css**](https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/100-vars.css) &nbsp;
-[**250-vars.css**](https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/250-vars.css) &nbsp;
-[**500-vars.css**](https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/500-vars.css) &nbsp;
-[**1000-vars.css**](https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/1000-vars.css) &nbsp;
-[**5000-vars.css**](https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/5000-vars.css) &nbsp;
-[**10000-vars.css**](https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/10000-vars.css)
+> [**100-vars.css**](https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/100-vars.css) &nbsp;
+[**250-vars.css**](https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/250-vars.css) &nbsp;
+[**500-vars.css**](https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/500-vars.css) &nbsp;
+[**1000-vars.css**](https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/1000-vars.css) &nbsp;
+[**5000-vars.css**](https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/5000-vars.css) &nbsp;
+[**10000-vars.css**](https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/10000-vars.css)
 
 
 Then link the file in your html:
 ```html
 <!-- use a cdn: -->
-<link rel="stylesheet" href="https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/styles/100-vars.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/css/100-vars.css">
 <!-- or download the file and use a local path: -->
 <link rel="stylesheet" href="./styles/100-vars.css">
 ```
@@ -51,7 +51,7 @@ Then link the file in your html:
 
 
 ## usage - javascript
-
+<!-- 
 If you want the variables only accessible on certain elements, don't want to worry about picking the right amount of variables, or just want to be more precise, use the js script.
 
 
@@ -64,16 +64,16 @@ The script looks for elements with the class "nth-var". It finds the one with th
 
 `NTH.appendRules(<amount:number>)` - Creates exactly as many rules as specified. (Don't use classes with this)  
 `NTH.setName(<name:string>)` - Changes the name of the `--nth-child` variable.  
-`NTH.setStart(<start:number>)` - Changes the starting number of the `--nth-child` variable. Default is 1.
+`NTH.setStart(<start:number>)` - Changes the starting number of the `--nth-child` variable. Default is 1. -->
 
 
 
 &nbsp;
-
+https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/js/main.min.js
 add the script to your page:
 ```html
 <!-- use a cdn: -->
-<script src="https://jsdelivr.net/gh/ryankurte/css-nth-child-variables@main/nth-child-variables.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/awasaka01/css-nth-child-variables@master/js/main.min.js"></script>
 <!-- or download the file and use a local path: -->
 <script src="./nth-child-variables.js"></script>
 ```
