@@ -1,6 +1,6 @@
 # css nth-child variables
-#### provides every element with their index as a css variable `var(--nth-child)`, starting at 1
-this allows you to style child elements based on their order without repeating `nth-child` selectors:
+#### Provides every element with their index as a css variable `var(--nth-child)`, starting at 1
+This allows you to style child elements based on their order without repeating `nth-child` selectors:
 ```css
 ul > *:nth-child(1) { width: 10px; }
 ul > *:nth-child(2) { width: 20px; }
@@ -9,7 +9,7 @@ ul > *:nth-child(4) { width: 40px; }
 ul > *:nth-child(5) { width: 50px; }
 ...
 ```
-becomes:
+Becomes:
 ```css
 ul > * { width: calc(10px * var(--nth-child)); }
 ```
